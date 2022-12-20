@@ -1,3 +1,5 @@
+package Day2
+
 import scala.io.Source
 
 enum Movement:
@@ -5,7 +7,7 @@ enum Movement:
     case Up(n: Int)
     case Down(n: Int)
 
-def solveDayTwoPartOne(): Int =
+def partOne(): Int =
     val filename = "src/main/scala/Day2.txt"
     try
         val rawInput = Source.fromFile(filename).getLines()
@@ -17,7 +19,7 @@ def solveDayTwoPartOne(): Int =
         println(s"Exception occurred: $e")
         0
 
-def solveDayTwoPartTwo(): Int =
+def partTwo(): Int =
     val filename = "src/main/scala/Day2.txt"
     try
         val rawInput = Source.fromFile(filename).getLines()

@@ -1,8 +1,10 @@
+package Day1
+
 import java.io.BufferedInputStream
 import scala.io.BufferedSource
 import scala.io.Source
 
-def solveDayOnePartOne(): Int =
+def partOne(): Int =
     val filename = "src/main/scala/Day1.txt"
     try
         val input = Source.fromFile(filename).getLines().map(s => s.toInt)
@@ -11,7 +13,7 @@ def solveDayOnePartOne(): Int =
         println(s"Exception occurred: $e")
         0
 
-def solveDayOnePartTwo(): Int =
+def partTwo(): Int =
     val filename = "src/main/scala/Day1.txt"
     try
         val input = Source.fromFile(filename).getLines().map(s => s.toInt)

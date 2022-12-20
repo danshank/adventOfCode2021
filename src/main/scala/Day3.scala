@@ -1,6 +1,8 @@
+package Day3
+
 import scala.io.Source
 
-def solveDayThreePartOne(): Int =
+def partOne(): Int =
     val filename = "src/main/scala/Day3.txt"
     try
         val rawInput = Source.fromFile(filename).getLines()
@@ -42,7 +44,7 @@ def updateBitShiftMapping(bitShiftMapping: (Int, (Int, Int)), x: Int): (Int, (In
         case 0 => (n, (zeroes + 1, ones))
         case 1 => (n, (zeroes, ones + 1))
 
-def solveDayThreePartTwo(): Int =
+def partTwo(): Int =
     val filename = "src/main/scala/Day3.txt"
     try
         val rawInput = Source.fromFile(filename).getLines()
